@@ -1,0 +1,82 @@
+/* Make sure root elements occupy full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+}
+
+/* Layout wrapper */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content should grow to fill space between header and footer */
+.app-content {
+  flex: 1;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Header styling (optional) */
+h1 {
+  color: #333;
+}
+
+/* Counter styling */
+.counter {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 40px 0;
+  color: #1e40af;
+}
+
+/* Button styling */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e40af;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* ensures it sticks to the bottom */
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #a5b4fc;
+}
