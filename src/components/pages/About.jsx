@@ -1,7 +1,12 @@
 import React from 'react';
+import Counter from '../Counter/Counter'
 
 function About() {
-  return <h2>About Us Page</h2>;
+  return (
+    <>
+<Counter/>
+</>
+  );
 }
 
 export default About;
