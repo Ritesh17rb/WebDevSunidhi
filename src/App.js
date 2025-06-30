@@ -8,13 +8,11 @@ import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Services from './components/pages/Services';
 import News from './components/pages/News/News';
-import { ThemeContext } from './context/ThemeContext';
 
 function App() {
-  const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div className={`app-container ${darkMode ? 'dark' : 'light'}`}>
+    <div className={`app-container`}>
       <Header />
       <div className="app-content">
         <Routes>
